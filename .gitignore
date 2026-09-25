@@ -1,0 +1,23 @@
+# 输出
+out/
+keyed/
+*_透明底.png
+*_keyed/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 模型缓存（不要提交模型）
+.rembg/
+models/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

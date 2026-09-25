@@ -1,0 +1,21 @@
+# 纯色背景专用超级抠图工具 —— 依赖
+#
+# 安装： pip install -r requirements.txt
+#
+# 说明：
+#   rembg          语义分割模型封装（提供 isnet-anime / birefnet / bria-rmbg 等）
+#   onnxruntime    模型推理后端（CPU 版即可；有 CUDA 可换 onnxruntime-gpu）
+#   pymatting      传统 alpha matting（closed-form + foreground estimation）
+#   opencv-python  形态学运算 / 连通域
+#   scipy          连通域标记 / 填洞统计（洞数自检用它）
+#   pillow numpy   图像与数值基础
+#
+# 首次运行会自动下载分割模型到 ~/.rembg/models/（默认 isnet-anime 约 168MB）
+
+rembg>=2.0.50
+onnxruntime>=1.16.0
+pymatting>=1.1.12
+opencv-python>=4.8.0
+scipy>=1.10.0
+pillow>=10.0.0
+numpy>=1.24.0
